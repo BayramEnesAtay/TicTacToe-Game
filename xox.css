@@ -15,7 +15,7 @@
   
   
 }
-.topleft{
+.block{
   background-color: black;
   color: white;
   text-align: center;
@@ -24,78 +24,6 @@
   font-size:100px;
   font-family: "Rubik";
   }
-.topright{
-  background-color: black;
-  color: white;
-  text-align: center;
-  vertical-align: middle;
-  line-height:100px;
-  font-family: "Rubik";
-  font-size:100px;
-}
-.topmiddle{
-background-color: black;
-color: white;
-text-align: center;
-  vertical-align: middle;
-  line-height:100px;
-  font-family: "Rubik";
-  font-size:100px;
-}
-.middleleft{
-background-color: black;
-color: white;
-text-align: center;
-  vertical-align: middle;
-  line-height:100px;
-  font-family: "Rubik";
-  font-size:100px;
-}
-.middlemiddle{
-background-color: black;
-color: white;
-text-align: center;
-  vertical-align: middle;
-  line-height:100px;
-  font-family: "Rubik";
-  font-size:100px;
-}
-.middleright{
-background-color: black;
-color: white;
-text-align: center;
-  vertical-align: middle;
-  line-height:100px;
-  font-family: "Rubik";
-  font-size:100px;
-}
-.bottomleft{
-background-color: black;
-color: white;
-text-align: center;
-  vertical-align: middle;
-  line-height:100px;
-  font-family: "Rubik";
-  font-size:100px;
-}
-.bottommiddle{
-background-color: black;
-color: white;
-text-align: center;
-  vertical-align: middle;
-  line-height:100px;
-  font-family: "Rubik";
-  font-size:100px;
-}
-.bottomright{
-background-color: black;
-color: white;
-text-align: center;
-  vertical-align: middle;
-  line-height:100px;
-  font-family: "Rubik";
-  font-size:100px;
-}
 
 body{
   background-color: black;
@@ -117,6 +45,7 @@ html{
   display: inline-block;
   text-align: center;
   margin-left:40px ;
+  margin-right:60px;
 }
 .parg3{
   display: inline-block;
@@ -126,4 +55,18 @@ html{
 }
 .paragrafhbox{
   text-align: center;
+}
+#reset{
+  color:rgba(255, 255, 255, 0.571);
+  background-color: rgb(77, 75, 75);
+  font-size: 30px;
+  display: inline-block;
+  border:none;
+  border-radius: 8px;
+}
+#reset:hover{
+  color:rgb(77, 75, 75);
+  background-color: rgba(255, 255, 255, 0.571);
+  transition: color 100ms, background-color 100ms;
+  
 }
