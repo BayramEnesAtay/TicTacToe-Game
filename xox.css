@@ -1,0 +1,129 @@
+.container{
+  display: grid;
+  
+  max-width: 310px;
+  row-gap: 5px;
+  column-gap: 5px;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  background-color: white;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+ 
+  
+  
+}
+.topleft{
+  background-color: black;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height:100px;
+  font-size:100px;
+  font-family: "Rubik";
+  }
+.topright{
+  background-color: black;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height:100px;
+  font-family: "Rubik";
+  font-size:100px;
+}
+.topmiddle{
+background-color: black;
+color: white;
+text-align: center;
+  vertical-align: middle;
+  line-height:100px;
+  font-family: "Rubik";
+  font-size:100px;
+}
+.middleleft{
+background-color: black;
+color: white;
+text-align: center;
+  vertical-align: middle;
+  line-height:100px;
+  font-family: "Rubik";
+  font-size:100px;
+}
+.middlemiddle{
+background-color: black;
+color: white;
+text-align: center;
+  vertical-align: middle;
+  line-height:100px;
+  font-family: "Rubik";
+  font-size:100px;
+}
+.middleright{
+background-color: black;
+color: white;
+text-align: center;
+  vertical-align: middle;
+  line-height:100px;
+  font-family: "Rubik";
+  font-size:100px;
+}
+.bottomleft{
+background-color: black;
+color: white;
+text-align: center;
+  vertical-align: middle;
+  line-height:100px;
+  font-family: "Rubik";
+  font-size:100px;
+}
+.bottommiddle{
+background-color: black;
+color: white;
+text-align: center;
+  vertical-align: middle;
+  line-height:100px;
+  font-family: "Rubik";
+  font-size:100px;
+}
+.bottomright{
+background-color: black;
+color: white;
+text-align: center;
+  vertical-align: middle;
+  line-height:100px;
+  font-family: "Rubik";
+  font-size:100px;
+}
+
+body{
+  background-color: black;
+  height: 100%;
+  
+}
+html{
+  height: 100%;
+}
+
+.parg1{
+  color:white;
+  display: inline-block;
+  text-align: center;
+  margin-right: 40px;
+}
+.parg2{
+  color: white;
+  display: inline-block;
+  text-align: center;
+  margin-left:40px ;
+}
+.parg3{
+  display: inline-block;
+  color: white;
+  font-size: 25px;
+  
+}
+.paragrafhbox{
+  text-align: center;
+}
