@@ -24,6 +24,11 @@ const wincombos=[
   ["topright", "middlemiddle", "bottomleft"]
 ];
 
+let resetbtn=document.querySelector("#reset");
+
+resetbtn.addEventListener("click",resetclick);
+
+
 
 var divs=document.querySelector(".container");
 //genel dıve erısıp ıcındekı dıvlere tek tek tıklama ozellıgı ekleme.
@@ -36,6 +41,21 @@ Array.from(childdiv).forEach(function(div)
   div.addEventListener("click",handleFunction);
 });
 
+function resetclick()
+{
+  for(let key of states.keys())
+  {
+    states.set(key,-1);
+  }
+
+  Array.from(childdiv).forEach(function(div)
+{
+  div.textContent="";
+  div.addEventListener("click",handleFunction);
+
+});
+}
+
 
 const pargbox=document.querySelector(".paragrafhbox");
 
@@ -47,10 +67,9 @@ document.querySelector(".parg2").style.opacity="0.5";
 function handleFunction(event) {
   const clickedDiv = event.currentTarget;
   
-  const className = clickedDiv.className;
-  
+  const idname = clickedDiv.id;
      
-  if(states.get(className)!=-1)
+  if(states.get(idname)!=-1)
   {
     alert("You have clicked this div");
     return;//fonk sonlandırır.
@@ -64,7 +83,7 @@ function handleFunction(event) {
 
       if(player%2!=0)//cıft tek olma durumu
       {
-        states.set(className,1);
+        states.set(idname,1);
         clickedDiv.textContent="X";
       
         document.querySelector(".parg2").style.fontWeight="bold";
@@ -72,7 +91,7 @@ function handleFunction(event) {
     }
     else if(player%2==0)//cift tek olma durumu
     { //burayı degıstırcem.
-      states.set(className,0);
+      states.set(idname,0);
       clickedDiv.textContent="O";
       document.querySelector(".parg1").style.fontWeight="bold";
       document.querySelector(".parg2").style.opacity="0.5";
