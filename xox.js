@@ -1,4 +1,4 @@
-var states=new Map([
+let states=new Map([
   ["topleft",-1],
   ["topmiddle",-1],
   ["topright",-1],
@@ -30,12 +30,12 @@ resetbtn.addEventListener("click",resetclick);
 
 
 
-var divs=document.querySelector(".container");
+let divs=document.querySelector(".container");
 //genel dıve erısıp ıcındekı dıvlere tek tek tıklama ozellıgı ekleme.
 //ardından tıklanıldıgındakı olayları kontrol etme.
 
-var childdiv=divs.children;//bize htmlcollectıon dodndurur.
- var player=1;
+let childdiv=divs.children;//bize htmlcollectıon dodndurur.
+ let player=1;
 Array.from(childdiv).forEach(function(div)
 {
   div.addEventListener("click",handleFunction);
@@ -154,7 +154,6 @@ function winnerstate()
 
 
 }
-
 
 
 
